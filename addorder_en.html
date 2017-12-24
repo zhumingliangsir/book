@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> 思源图书－购物车 </title>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/jd.css">
+  <link rel="stylesheet" href="css/addorder.css">
+</head>
+
+<body>
+<div id="header"></div>
+
+<div id="main">
+  <div class="add-order">
+    <header class="checkout-tit">
+      <span class="tit-txt">Fill in and check the order information</span>
+    </header>
+    <section class="checkout-steps">
+      <div class="step-tit">
+        <h3>consignee</h3>
+
+        <!--用于收集用户的所有输入-->
+        <form id="form-addorder"></form>
+
+        <div class="extra-r">
+          <a href="#none" class="ftx-05">New delivery address</a>
+        </div>
+      </div>
+      <div class="step-cont">
+        <div class="addr-detail">
+          <span class="addr-name" limit="6" title="xiaoming">xiaoming</span>
+          <input type="hidden" form="form-addorder" name="rcvName" value="xiaoming"/>
+          <span class="addr-info" limit="45" title="Shijiazhuang branch, Yu Xiang street, Hebei, Dali">Shijiazhuang branch, Yu Xiang street, Hebei, Dali</span>
+          <input type="hidden" form="form-addorder" name="rcvAddr" value="New delivery address"/>
+          <span class="addr-tel">136****1379</span>
+          <input type="hidden" form="form-addorder" name="rcvPhone" value="136****1379"/>
+        </div>
+      </div>
+      <div class="hr"></div>
+
+      <div class="step-tit">
+        <h3>mode of payment </h3>
+      </div>
+      <div class="step-cont">
+        <ul class="payment-list">
+          <li class="payment-item-selected" data-value="1"><b></b>cash on delivery</li>
+          <li data-value="2"><b></b>zhifubao</li>
+          <li data-value="3"><b></b>weixin</li>
+          <li data-value="4"><b></b>zaixianzhifu</li>
+          <input type="hidden" form="form-addorder" name="payment" value="1">
+        </ul>
+      </div>
+      <div class="hr"></div>
+
+      <div class="step-tit">
+        <h3>goods detail</h3>
+      </div>
+      <div class="step-cont">
+        <section class="shopping-list">
+          <aside>
+            <div class="mode-item-tit">
+              <h4>Delivery mode</h4>
+            </div>
+            <div class="mode-tab-nav">
+              <span class="m-txt">shunfengkuaidi<i class="qmark-icon qmark-tip"></i></span><b></b>
+            </div>
+
+          </aside>
+          <div class="goods-list">
+            <div class="goods-tit">
+              <h4 class="vendor_name_h" id="0">seller：My little shop</h4>
+            </div>
+            <div class="goods-items">
+              <div class="goods-item">
+                <div class="p-img">
+                  <a target="_blank" href=""><img src="images/book/book01.jpg" alt=""></a>
+                </div>
+                <div class="p-name">
+                  <a href="" target="_blank">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, incidunt ipsam iste libero magnam modi quasi ratione tempore?
+                  </a>
+                </div>
+                <div class="p-price">
+                  <strong class="jd-price">￥59.00</strong>
+                  <span class="p-num">x1</span>
+                  <span class="p-state">available</span>
+                </div>
+              </div>
+              <div class="goods-item">
+                <div class="p-img">
+                  <a target="_blank" href=""><img src="images/book/book02.jpg" alt=""></a>
+                </div>
+                <div class="p-name">
+                  <a href="" target="_blank">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, incidunt ipsam iste libero magnam modi quasi ratione tempore?
+                  </a>
+                </div>
+                <div class="p-price">
+                  <strong class="jd-price">￥59.00</strong>
+                  <span class="p-num">x1</span>
+                  <span class="p-state">available</span>
+                </div>
+              </div>
+              <div class="goods-item">
+                <div class="p-img">
+                  <a target="_blank" href=""><img src="images/book/book03.jpg" alt=""></a>
+                </div>
+                <div class="p-name">
+                  <a href="" target="_blank">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi atque autem blanditiis consectetur cumque dolorem eaque eveniet fugit illo magni molestias officia, omnis quaerat sequi suscipit tempore veniam vitae voluptatem.                  </a>
+                </div>
+                <div class="p-price">
+                  <strong class="jd-price">￥59.00</strong>
+                  <span class="p-num">x1</span>
+                  <span class="p-state">available</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="hr"></div>
+
+      <!--<div class="step-tit">-->
+        <!--<h3>Invoice information</h3>-->
+      <!--</div>-->
+      <!--<div class="step-content">-->
+        <!--<div id="part-inv" class="invoice-cont">-->
+          <!--<span class="mr10"> electron  &nbsp; </span>-->
+          <!--<span class="mr10"> person&nbsp; </span>-->
+          <!--<span class="mr10"> detail&nbsp; </span>-->
+        <!--</div>-->
+      <!--</div>-->
+    </section>
+    <div class="order-summary">
+      <div class="statistic fr">
+        <div class="list">
+          <span>price of all：</span>
+          <em class="price" id="warePriceId" v="264">￥264.00</em>
+        </div>
+        <div class="list">
+          <span>transportation expenses：</span>
+          <em class="price"><i class="freight-icon"></i> ￥0.00</em>
+        </div>
+      </div>
+      <div class="clr"></div>
+    </div>
+    <div class="trade-foot">
+      <div class="trade-foot-detail-com">
+        <div class="fc-price-info">
+          <span class="price-tit">Total payable：</span>
+          <span class="price-num">￥59</span>
+          <input type="hidden" id="price" form="form-addorder" name="price"/>
+        </div>
+        <div class="fc-consignee-info">
+        </div>
+      </div>
+
+      <div id="checkout-floatbar" class="group">
+        <div class="checkout-buttons">
+          <button type="button" class="checkout-submit">
+            Go to<b></b>
+          </button>
+        </div>
+        <span id="submit_message" style="display:none" class="submit-error"></span>
+
+        <div class="submit-check-info" id="submit_check_info_message" style="display:none"></div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<div id="footer"></div>
+
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/addorder_en.js"></script>
+
+</body>
+</html>

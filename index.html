@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> 思源图书－产品列表 </title>
+        <meta charset="utf-8"/>
+        <link rel="icon" href="img/favicon.ico">
+        <link rel="stylesheet" href="css/jd.css">
+        <link rel="stylesheet" href="css/product.css">
+    </head>
+
+    <body>
+
+        <div id="site_header"></div>
+        <div id="main">
+            <div class="affix" id="affix_left">
+                <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;商家推荐</h4>
+                <ul>
+                    <li>
+                        <img src="images/book/book16.jpg" style="width:120px;height:120px"/>
+                    </li>
+                    <li>
+                        <img src="images/book/book17.jpg" style="width:120px;height:120px"/>
+                    </li>
+                    <li>
+                        <img src="images/book/book18.jpg" style="width:120px;height:120px"/>
+                    </li>
+                </ul>
+                <hr/>
+                <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;图书小贴士</h4>
+                <ul style="color:red">
+                    <li>
+                        <h6>① &nbsp;&nbsp;首先要防潮</h6>
+                    </li>
+                    <li>
+                        <h6>① &nbsp;&nbsp;首先要防潮</h6>
+                    </li>
+                    <li>
+                        <h6>① &nbsp;&nbsp;首先要防潮</h6>
+                    </li>
+                    <li>
+                        <h6>① &nbsp;&nbsp;首先要防潮</h6>
+                    </li>
+                </ul>
+                <hr/>
+                <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;店铺公告</h4>
+                <ul>
+                    <li>
+                        <p>
+                       欢迎光临本店，本店新开张，<h4 style="color: red">诚信经营</h4>只赚信誉不赚钱。 商品 <h4 style="color: red">均属正品</h4>信誉保证<h4 style="color: red">假一罚十</h4>本店的服务宗旨是用心服务，以诚待人！
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="container productlist">
+                <!-- 排序部分 -->
+                <header style="background-color: #FFF8DC">
+                    <ul id="loadProductByPrice">
+                        <li><a href="" class="curr">销量</a></li>
+                        <li><a href="#" class="price">价格</a></li>
+                        <!--<li><a href="">评论数</a></li>-->
+                        <!--<li><a href="">上架时间</a></li>-->
+                    </ul>
+                    <ol>
+                        <li><a href="">&lt;</a></li>
+                        <li><a href="">&gt;</a></li>
+                    </ol>
+                </header>
+                <!-- 产品列表 -->
+                <section id="plist">
+                    <ul>
+                        <li>
+                            <a href="" class="showDetail"><img src="images/book/book01.jpg" alt=""/></a>
+                            <p>￥59.00</p>
+                            <h1><a href="#"></a></h1>
+                            <div>
+                                <a href="" class="contrast"><i></i>对比</a>
+                                <a href="" class="p-operate"><i></i>关注</a>
+                                <a href="" class="addcart"><i></i>加入购物车</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href=""><img src="images/book/book02.jpg" alt=""/></a>
+                            <p></p>
+                            <h1><a href=""></a></h1>
+                            <div>
+                                <a href="" class="contrast"><i></i>对比</a>
+                                <a href="" class="p-operate"><i></i>关注</a>
+                                <a href="" class="addcart"><i></i>加入购物车</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href=""><img src="images/book/book03.jpg" alt=""/></a>
+                            <p>￥59.00</p>
+                            <h1><a href=""></a></h1>
+                            <div>
+                                <a href="" class="contrast"><i></i>对比</a>
+                                <a href="" class="p-operate"><i></i>关注</a>
+                                <a href="" class="addcart"><i></i>加入购物车</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href=""><img src="images/book/book06.jpg" alt=""/></a>
+                            <p>￥59.00</p>
+                            <h1><a href=""></a></h1>
+                            <div>
+                                <a href="" class="contrast"><i></i>对比</a>
+                                <a href="" class="p-operate"><i></i>关注</a>
+                                <a href="" class="addcart"><i></i>加入购物车</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="clear"></div>
+                    <ol class="pager">
+                        <!-- <li><a href="#">1</a></li> -->
+                        <!-- <li><a href="#">2</a></li> -->
+                        <!-- <li class="active"><a href="#">3</a></li> -->
+                        <!-- <li><a href="#">4</a></li> -->
+                        <!-- <li><a href="#">5</a></li> -->
+                    </ol>
+                </section>
+            </div>
+        </div>
+        <div id="site_footer"></div>
+        
+        <!--模态登录对话框-->
+        <div class="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <h4>用户登录</h4>
+                    <p class="alert">
+                        请在此处输入您的注册信息。
+                    </p>
+                    <form id="login-form">
+                        <input type="text" placeholder="请输入登录用户名" name="uname" value="koma">
+                        <input type="password" placeholder="请输入登录密码" name="upwd" value="enen">
+                        <input type="button" value="提交登录信息" id="bt-login">
+                        <a href="register.html">新用户注册</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <script src="js/jquery-1.11.3.js"></script>
+        <script src="js/productlist.js"></script>
+
+    </body>
+</html>

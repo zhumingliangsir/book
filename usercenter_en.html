@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> 用户中心 — 思源图书 </title>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/jd.css">
+  <link rel="stylesheet" href="css/usercenter.css">
+</head>
+
+<body>
+<div id="header"></div>
+
+<div id="main">
+  <!--左侧的附加导航-->
+  <div class="affix">
+    <h4>User center</h4>
+    <ul>
+      <li class="active"><a href="#my-order">myOrder</a></li>
+      <!--<li><a href="#buy-stat-canvas">消费统计(Canvas版)</a></li>-->
+      <li><a href="#buy-stat-svg">census(SVG)</a></li>
+      <!--<li><a href="#luck-lottery">幸运抽奖</a></li>-->
+    </ul>
+  </div>
+  <!--右侧的主体内容-->
+  <div class="right">
+    <div id="my-order" class="active">
+      <!--我的订单TABLE-->
+      <table id="table-order">
+        <thead>
+        <tr>
+          <th>Order information</th>
+          <th>receiver </th>
+          <th>Order Money</th>
+          <th>
+            <!--<select id="ot">-->
+              <!--<option value="m1">最近一个月</option>-->
+              <!--<option value="m3">最近三个月</option>-->
+              <!--<option value="m6">最近半年</option>-->
+              <!--<option value="m12">最近一年</option>-->
+            <!--</select>-->
+            Order time
+          </th>
+          <th>
+            <!--<select id="st">-->
+              <!--<option value="1">等待付款</option>-->
+              <!--<option value="2">配货中</option>-->
+              <!--<option value="3">运输中</option>-->
+              <!--<option value="4">派货中</option>-->
+              <!--<option value="5">订单完成</option>-->
+            <!--</select>-->
+            operate
+          </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td colspan="6">order number：81308005</td>
+        </tr>
+        <tr>
+          <td>
+            <img src="img/prod1.jpg">
+            <img src="img/prod2.jpg">
+            <img src="img/prod3.jpg">
+          </td>
+          <td>xiaozhuang</td>
+          <td>￥59<br>zaixianzhifu</td>
+          <td>2017-6-1<br>10:22:35</td>
+          <td>Dispatch goods</td>
+          <td>
+            <a href="#">check</a>
+            <a href="#">appraise</a><br/>
+            <a href="#">shaidan</a>
+            <a href="#">order again</a>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="6">order number：81308005</td>
+        </tr>
+        <tr>
+          <td>
+            <img src="img/prod1.jpg">
+            <img src="img/prod2.jpg">
+            <img src="img/prod3.jpg">
+          </td>
+          <td>xiaozhang</td>
+          <td>￥59<br>zaixianzhifu</td>
+          <td>2017-6-1<br>10:22:35</td>
+          <td>Dispatch goods</td>
+          <td>
+            <a href="#">check</a>
+            <a href="#">appraise</a><br/>
+            <a href="#">shaidan</a>
+            <a href="#">order again</a>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="6">order number：81308005</td>
+        </tr>
+        <tr>
+          <td>
+            <img src="img/prod1.jpg">
+            <img src="img/prod2.jpg">
+            <img src="img/prod3.jpg">
+          </td>
+          <td>xiaozhang</td>
+          <td>￥59<br>zaixianzhifu</td>
+          <td>2017-6-1<br>10:22:35</td>
+          <td>Dispatch goods</td>
+          <td>
+            <a href="#">check</a>
+            <a href="#">appraise</a><br/>
+            <a href="#">shaidan</a>
+            <a href="#">order again</a>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+
+      <!--分页条-->
+      <ul class="pager">
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li class="active"><a href="#">5</a></li>
+        <li><a href="#">6</a></li>
+        <li><a href="#">7</a></li>
+      </ul>
+
+    </div>
+    <div id="buy-stat-svg">statistics(SVG)</div>
+    <div id="luck-lottery">
+      <button disabled id="bt-lottery">
+        Draw information loading
+      </button>
+      <canvas id="canvas-lottery"></canvas>
+    </div>
+  </div>
+</div>
+
+<div id="footer"></div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/fusioncharts.js"></script>
+<script src="js/fusioncharts.charts.js"></script>
+
+<script src="js/usercenter_en.js"></script>
+
+</body>
+</html>
